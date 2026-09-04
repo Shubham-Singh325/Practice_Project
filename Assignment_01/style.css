@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: #fbfbfb;
+  padding: 0 30px;
+}
+#section-1 {
+  width: 100%;
+  height: 100%;
+}
+nav {
+  width: 100%;
+  height: 60px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .header {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.header i {
+  font-size: 35px;
+}
+.links {
+  display: flex;
+  gap: 20px;
+}
+.links a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.btn {
+  display: flex;
+  gap: 10px;
+}
+.btn button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+}
+.btn button:nth-child(2) {
+  background-color: black;
+  color: white;
+}
+.hero {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: rgba(228, 228, 228, 0.662);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  padding: 15px 40px;
+}
+.hero .left {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(234, 234, 234, 0.662);
+  gap: 10px;
+}
+.hero .right {
+  width: 50%;
+  height: 100%;
+  background-color: darkred;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.left .logo img {
+  height: 80px;
+}
+.left .Rating {
+  padding: 10px 30px;
+  display: flex;
+  background-color: white;
+  width: fit-content;
+  border-radius: 50px;
+  gap: 10px;
+  align-items: center;
+}
+.left .Rating i {
+  font-size: 25px;
+}
+.left .rating-text span {
+  font-size: 10px;
+  opacity: 0.6;
+}
+.left h1 {
+  font-size: 100px;
+  margin-top: 30px;
+  line-height: 90%;
+}
+.left p {
+  margin-top: 30px;
+  opacity: 0.8;
+  font-size: 15px;
+  width: 95%;
+}
+.left .btn {
+  margin-top: 30px;
+}
+.left .btn button {
+  padding: 20px 40px;
+  border-radius: 50px;
+}
+.btn button:nth-child(1) {
+  background-color: #dadada;
+}
+#arrow {
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+}
+.left > h3 {
+  margin-top: 30px;
+  font-size: 20px;
+}
+.logo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.right .imgdiv{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+.right img {
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#section-2{
+  width: 100%;
+  height: 100%;
+}
+.hero2 {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: rgba(228, 228, 228, 0.662);
+  overflow: hidden;
+  padding: 15px 40px;
+}
+.hero2 .upper{
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+  background-color:#EBEBEB;
+  display: flex;
+  justify-content: space-between;
+}
+.hero2 .lower{
+  width: 100%;
+  height: 50%;
+  background-color: #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.card{
+  width: 24%;
+  height: 95%;
+  background-color:#DADADA;
+  border-radius: 20px;
+  overflow: hidden;
+  ;
+}
+.card .cardimg{
+  width: 100%;
+  height: 90%;
+  background-image: url(https://images.unsplash.com/photo-1566665797739-1674de7a421a?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWwlMjBiZWRyb29tfGVufDB8fDB8fHww);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: end;
+  padding: 10px 10px;
+}
+.card .cardtext{
+  padding: 8px 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.cardtext h3{
+  font-size: 10px;
+  opacity: 0.6;
+}
+#star{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+}
+.upper .card:nth-child(2) .cardimg{
+  background-image: url(https://images.trvl-media.com/lodging/124000000/123890000/123881700/123881614/0b690ef3.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill);
+}
+.upper .card:nth-child(4) .cardimg{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROjnYT5R0RrvsszWAkB6tGNb_niLCNuaLPcB_6FMI_UCSLoYFVnQF3gVR_&s=10);
+}
+#cross{
+  font-size: 9px;
+  padding: 2px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+.card:nth-child(3) {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card:nth-child(3) h6{
+  opacity: 0.6;
+}
+.card:nth-child(3) h2{
+  padding-bottom: 140px;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.lower .lowerbar{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #DADADA;
+  border-radius: 10px;
+}
+.lowerbar .inner{
+  width: 23%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lowerbar .inner:nth-child(1){
+  background-color: white;
+  border-radius: 10px;
+}
+.lower h5{
+  opacity: 0.6;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  padding-top: 60px;
+}
+.lower h1{
+  font-size: 100px;
+  padding-bottom: 60px;
+}
+#section-3{
+  width: 100%;
+  height: 100%;
+}
+.hero3 {
+  width: 100%;
+  height: calc(100vh - 20px);
+  background-color: rgba(228, 228, 228, 0.662);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  padding: 15px 40px;
+  margin-bottom: 10px;
+}
+.hero3 .villa1{
+  width: 100%;
+  height: 48%;
+  background-color: #DADADA;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero3 .villa2{
+  width: 100%;
+  height: 48%;
+  background-color: #DADADA;
+  border-radius: 10px;
+  margin-bottom: 50px;
+   margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.villa1 .card:nth-child(1){
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReJ3TUCZgu06j0TFoa25724oHhV0N0X9JaO-ApoLxxX0t5_l6GGgEzHi0&s=10);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: end;
+  padding: 10px 10px;
+}
+.villa1 .card:nth-child(1) h4{
+  width: 60px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  opacity: 0.6; 
+}
+ .villa1 .card:nth-child(2) {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ .villa1 .card:nth-child(2) h6{
+  opacity: 0.6;
+  word-spacing: 3px;
+  letter-spacing: 3px;
+}
+ .villa1 .card:nth-child(2) h2{
+  padding-bottom: 160px;
+  font-family: 'Times New Roman', Times, serif; 
+}
+.villa1 .card:nth-child(3){
+  background-color: #EBEBEB;
+}
+.card .content{
+  display: flex;
+  justify-content: space-between;
+}
+#font{
+  opacity: 0.6;
+}
+.villa1 .card:nth-child(4){
+  background-color: #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+#draw{
+  font-size: 40px;
+}
+.card .cardcontent{
+  display: flex;
+  justify-content: space-between;
+}
+.text{
+  padding-left: 5px;
+  line-height: 150%;
+}
+.booking{
+  display: flex;
+  justify-content: center;
+}
+.booking button{
+  background-color: black;
+  color: white;
+  padding: 20px 100px;
+  border-radius: 30px;
+}
+.villa2 .card:nth-child(1){
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReJ3TUCZgu06j0TFoa25724oHhV0N0X9JaO-ApoLxxX0t5_l6GGgEzHi0&s=10);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: end;
+  padding: 10px 10px;
+}
+.villa2 .card:nth-child(1) h4{
+  width: 60px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  opacity: 0.6; 
+}
+ .villa2 .card:nth-child(2) {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ .villa2 .card:nth-child(2) h6{
+  opacity: 0.6;
+  word-spacing: 3px;
+  letter-spacing: 3px;
+}
+ .villa2 .card:nth-child(2) h2{
+  padding-bottom: 160px;
+  font-family: 'Times New Roman', Times, serif; 
+}
+.villa2 .card:nth-child(3){
+  background-color: #EBEBEB;
+}
+.villa2 .card:nth-child(4){
+  background-color: #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+.villa2 .card:nth-child(1){
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWD7YMuObcj2W526uRSju4dTK4LPbW_VLwt8Qn8bnNA-uDuV2jphC_iG0&s=10);}
+

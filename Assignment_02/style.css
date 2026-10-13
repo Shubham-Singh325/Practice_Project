@@ -13,24 +13,40 @@ main{
     background-color: lightblue;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 50% 40%;
+    grid-template-rows: 10% 45% 40%;
+    grid-template-areas: 
+    "header header header"
+    "hero hero hero"
+    "bottom-left bottom-center bottom-right";
     gap: 10px;
+    padding: 10px ;
 }
 header{
     background-color: crimson;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-area:header ;
+    border-radius: 10px;
 }
 .hero{
     background-color: bisque;
-    grid-column: 1/4;
+    grid-area: hero;
+    border-radius: 10px;
+
 }
 .bottom-left{
     background-color: blueviolet;
+    grid-area: bottom-left;
+    border-radius: 10px;
+
 }
 .bottom-center{
     background-color: cadetblue;
+    grid-area: bottom-center;
+    border-radius: 10px;
+
 }
 .bottom-right{
-    background-color: blue;
+    background-color: rgb(47, 47, 87);
+    grid-area: bottom-right;
+    border-radius: 10px;
+
 }

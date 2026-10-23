@@ -25,6 +25,7 @@ header{
     background-color: crimson;
     grid-area:header ;
     border-radius: 10px;
+    
 }
 .hero{
     background-color: bisque;
